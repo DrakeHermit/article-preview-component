@@ -30,6 +30,10 @@ img {
   width: 100%;
 }
 
+p {
+  color: #6E8098;
+}
+
 button {
   width: 32px;
   height: 32px;
@@ -45,9 +49,9 @@ h1, h2 {
 .article__card {
   display: flex;
   flex-direction: column;
-  width: 20.44rem;
   border-radius: 10px;
   background-color: #fff;
+  position: relative;
 
   img {
     border-radius: 0.7rem 0.7rem 0 0;
@@ -68,17 +72,19 @@ h1, h2 {
     letter-spacing: .12px;
     font-weight: 500;
     line-height: 1.54;
-    color: var(--active-bg-color);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
+}
+
+.link__share-desktop {
+  display: none;
 }
 
 .main__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  padding: 1rem 2rem 1rem 2rem;
+  padding-bottom: 1.3rem;
   transition: all .4s ease-in;
 
     img {
@@ -114,19 +120,19 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     background-color: var(--active-bg-color);
-    top: 0;
+    top: 86%;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 69px;
     align-items: center;
     border-radius: 0 0 11px 11px;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem;
     z-index: -1;
     transition: all .4s ease-in;
 
     .link__share-left {
       display: flex;
-      gap: 1.1rem;
+      gap: 1rem;
     }
 
     p {
@@ -140,5 +146,75 @@ h1, h2 {
       width: 20px;
       height: 20px;
       border-radius: 0;
+      margin-right: 0.2rem;
+    }
+  }
+
+  @media (min-width: 1080px) {
+    .container {
+      padding: 1.5rem 3rem;
+    }
+    .article__card {
+      flex-direction: row;
+      width: 800px;
+
+      .article__heading {
+        font-size: 20px;
+        margin-bottom: 0.7rem;
+      }
+
+      .article__description {
+        margin-bottom: 1.5rem;
+      }
+
+      img {
+        border-radius: 0.7rem 0 0 0.7rem;
+        height: 280px;
+      }
+    }
+    .link__share {
+      display: none;
+    }
+    .main__footer {
+      padding: 0;
+      position: relative;
+      
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .link__share-desktop {
+        position: absolute;
+        display: flex;
+        background-color: var(--active-bg-color);
+        padding: 1.2rem 2.33rem;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 10px;
+        top: -202%;
+        left: 63%;
+        z-index: 1;
+
+        .link__share-left {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+        }
+
+        p {
+          font-size: 13px;
+          letter-spacing: 5px;
+          text-transform: uppercase;
+          color: var(--button-color-active);
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+          border-radius: 0;
+        }
+      }
     }
   }
