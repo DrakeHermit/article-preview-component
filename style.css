@@ -22,7 +22,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 4rem 1.5rem;
-  overflow: hidden;
 }
 
 img {
@@ -85,7 +84,6 @@ h1, h2 {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 1.3rem;
-  transition: all .4s ease-in;
 
     img {
       width: 40px;
