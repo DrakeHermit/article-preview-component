@@ -12,7 +12,6 @@ This is a solution to the [Article preview component challenge on Frontend Mento
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -27,16 +26,21 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/desktop.png)
+![](./images/desktop-active.png)
+![](./images/mobile.jpg)
+![](./images/mobile-active.jpg)
 
 
 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/DrakeHermit/article-preview-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://drakehermit-article-preview.netlify.app/)
 
 ## My process
+
+I started with HTML and CSS, and then I moved onto making the links popup on mobile phones first with JS. After that I finished the CSS for desktop devices and made the links popup interactively.
 
 ### Built with
 
@@ -44,14 +48,15 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-
+- JavaScript
 
 ### What I learned
 
-
+I learned quite a bit actually, mostly JS. I learned how to check for the size of the viewport and make something happen with JS based on that. Also with CSS I learned how to make a triangle as a pseudo element.
 
 ### Continued development
 
+I gotta keep on learning JS at this stage and refine my HTML and CSS skills too.
 
 
 ## Author
